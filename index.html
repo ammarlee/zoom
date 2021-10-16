@@ -17,35 +17,68 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous"
     />
+    <style>
+      #meetingContainer{
+        display: none;
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
+  <div class="container text-center">
 
-<div class="row mt-5  text-center" id="users">
-  <div class="myvideodiv  col-md-4">
-    <h2>my video </h2>
-    <video muted autoplay id="localVideoPlayer"></video>
-  </div>
+    <div id="meetingContainer" class=" bg-success py-2 ">
+      <h2 class="text-light">meeting Container </h2>
+    </div>
+    <div id="divUsers">
+      <h3>divUsers</h3>
+
+    </div>
+
+    <div class="row mt-5  text-center" id="users">
+      <div class="myvideodiv bg-primary col-md-12 py-1">
+        <h2>my video </h2>
+        <div class="bg-light">
+          <video muted autoplay id="localVideoPlayer"></video>
+        </div>
+      </div>
+    </div>
+    <div id="otherTemplate" class=" bg-success py-2 mt-2">
+      <h2 class="text-danger">other Template</h2>
+      <video muted autoplay ></video>
+      <audio  muted autoplay ></audio>
+
+    </div>
+
+
+
 </div>
-<nav class="navbar fixed-bottom navbar-dark bg-dark">
+
+<nav class="navbar fixed-bottom navbar-dark bg-dark py-2">
   <div class="container">
 
-    <div class="row  " >
-      <div class="col-4">
-        <div class="btn btn-danger " id="miceMuteOfOn">
+    <div class="row" style="width:100%">
+      <div class="col-md-3">
+        <div class="btn  btn-lg btn-danger " id="miceMuteUnmute">
           mice 
           
         </div>
       </div>
-      <div class="col-4">
-        <div class="btn btn-primary " id="VideoOfOn">
+      <div class="col-md-3">
+        <div class="btn  btn-lg btn-primary " id="videoCamOnOff">
           camera 
           
         </div>
       </div>
-      <div class="col-4">
-        <div class="btn btn-primary " id="screenshare">
+      <div class="col-md-3">
+        <div class="btn  btn-lg btn-danger " id="videoCamOff">
+          camera off
+          
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="btn  btn-lg btn-primary " id="ScreenShareOn">
           screenshare 
           
         </div>
